@@ -1,0 +1,41 @@
+[package]
+name = "rusty-dftd"
+version = "0.0.1"
+authors = ["xmiaocat <xincheng.miao@stud-mail.uni-wuerzburg.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "rusty_dftd_lib"
+path = "src/lib.rs"
+# crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "rusty_dftd_bin"
+path = "src/bin.rs"
+
+[dependencies]
+approx = "0.5.0"
+ndarray = {version = "0.15", features = ["serde-1", "approx"]}
+ron = "0.6.0"
+libm = "0.2.1"
+clap = "=3.0.0-beta.2"
+chemfiles = "0.10"
+nalgebra = "0.29"
+soa_derive = "0.10.0"
+
+# [profile.release]
+# debug = true
+
+[dev-dependencies]
+criterion = "0.3"
+rand = "0.8.4"
+
+[[bench]]
+name = "triple_scale_benchmark"
+harness = false
+
+[[bench]]
+name = "to_ndarray_benchmark"
+harness = false
