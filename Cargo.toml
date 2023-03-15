@@ -17,12 +17,12 @@ path = "src/bin.rs"
 
 [dependencies]
 approx = "0.5.0"
-ndarray = {version = "0.15", features = ["serde-1", "approx"]}
-ron = "0.6.0"
+ndarray = {version = "0.15.6", features = ["serde-1", "approx"]}
+ron = "0.8.0"
 libm = "0.2.1"
 clap = "=3.0.0-beta.2"
 chemfiles = "0.10"
-nalgebra = "0.29"
+nalgebra = "0.32.1"
 soa_derive = "0.10.0"
 
 # [profile.release]
