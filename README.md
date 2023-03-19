@@ -1,6 +1,5 @@
 # Rust implementation of DFTD
-The code is based on the implementation of the DFT-D3 Dispersion correction in the [simple-dftd3](https://github.com/dftd3/simple-dftd3) program
-and was ported from fortran to rust.
+The program is a port of the orignal DFT-D3 implementation by the Grimme group ([simple-dftd3](https://github.com/dftd3/simple-dftd3)) to Rust. 
 
 # References
 S. Grimme, J. Antony, S. Ehrlich, and H. Krieg, *J. Chem. Phys.*, __2010__,*132*, 154104 ([DOI](https://dx.doi.org/10.1063/1.3382344))
